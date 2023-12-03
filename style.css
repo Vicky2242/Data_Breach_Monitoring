@@ -1,0 +1,127 @@
+body{
+    margin: 0px;
+    background-image: url('images/dbm.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+h2{
+    font-size:60px;
+    color: rgb(155, 250, 12);
+    margin-right: 70px;
+    padding: 65px;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: red;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar  a:hover{
+    background-color: brown;    
+}
+.navbar li{
+    float:left;
+}
+.container{
+    margin: 50px auto;
+    max-width: 500px;
+    background-color: aliceblue;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="password"]{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #ffff;
+    font-size: 18px;
+    background-color: #007bff;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
+button:hover{
+    background-color: #0062cc;
+}
+.images{
+    padding: 50px;
+    margin: 50px;
+}
+.images img{
+    margin-bottom: 20px;
+}
+footer{
+    text-align: center;
+    background-color: rgb(194, 209, 221);
+    color: rgb(4, 4, 5);
+    padding: 10px;
+}
+footer .p{
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        text-align: center;
+    }
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar li {
+        float: none;
+    }
+    .images img {
+        max-width: 100%;
+        height: auto;
+    }
+}
