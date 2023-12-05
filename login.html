@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Breach monitor login</title>
+     <link rel="stylesheet" href="style.css">
+     <script src="login.js"></script>
+</head>
+<body>
+    <h1>Login</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="upload.html">Upload</a></li>
+            <li><a href="prediction.html">Prediction</a></li>
+            <li><a href="performance_analysis.html">performance_analysis</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+    <label for="Username">Username:</label>
+    <input type="text" name="Username" placeholder="Enter your username">
+    <label for="password">Password:</label>
+    <input type="password" name="password" placeholder="Enter your password">
+    <button>Login</button>
+</div>
+<script>
+    
+form.addEventListener("submit",(e)=>{
+    e.preventDefault()
+
+    const username=form.username.value
+    const password=form.password.value
+
+    const authenticated=authentication(username,password)
+
+    if(authenticated){
+        window.location.href="logout.html";
+    }else{
+        alert("wrong");
+    }
+})
+
+function authentication(username,password){
+    if(username === "admin" && password === "password"){
+        return true;
+    }else{
+        return false;
+    }
+}
+</script>
+</body>
+</html>
